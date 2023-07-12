@@ -1,6 +1,6 @@
 # tsx-repro
 
-https://github.com/esbuild-kit/tsx/issues/251
+https://github.com/esbuild-kit/tsx/issues/265
 
 When using `tsx` with multiple `tsconfig.json` files and the `paths` compiler option set, an `ERR_MODULE_NOT_FOUND` error is raised:
 

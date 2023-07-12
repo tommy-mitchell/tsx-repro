@@ -3,7 +3,7 @@
 	"name": "tsx-repro",
 	"type": "module",
 	"scripts": {
-		"test": "tsx test/test.ts"
+		"start": "tsx test/test.ts"
 	},
 	"dependencies": {
 		"@types/node": "^20.4.1",
