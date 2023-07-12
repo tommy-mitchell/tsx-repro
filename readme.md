@@ -28,4 +28,25 @@ Error [ERR_MODULE_NOT_FOUND]: Cannot find package '~' imported from tsx-repro/te
 
 </details>
 
+```ts
+// src/index.ts
+export const foo = () => "bar";
+```
+
+```ts
+// src/types.ts
+export type Foo = "bar";
+```
+
+```ts
+// test/test.ts
+import assert from "node:assert";
+import { foo } from "~/index.ts"; // Errors here
+import type { Foo } from "~/types.ts";
+
+assert.strictEqual(foo() as Foo, "bar");
+```
+
+---
+
 The test script can be run via `npm test`.
