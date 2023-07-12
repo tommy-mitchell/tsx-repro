@@ -1,0 +1,13 @@
+{
+	"exclude": ["node_modules"],
+	"include": ["test"],
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"allowImportingTsExtensions": true,
+		"noEmit": true,
+		"baseUrl": "./test",
+		"paths": {
+			"~/*": ["../src/*"],
+		},
+	},
+}
